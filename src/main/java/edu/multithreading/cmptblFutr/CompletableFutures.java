@@ -1,4 +1,4 @@
-package edu.multithreading;
+package edu.multithreading.cmptblFutr;
 
 import java.util.concurrent.CompletableFuture;
 
