@@ -1,6 +1,9 @@
 package edu.multithreading.fni;
 
+import edu.multithreading.fni.model.Employee;
+
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class CollectionBasedInterview {
@@ -23,6 +26,10 @@ public class CollectionBasedInterview {
                 forEach(n -> System.out.println("Intersection: " + n));
 
         // find using best approach and more precise ways
+        List<Employee> lst = Arrays.asList(new Employee(1L, "Rohan@gmail.com", 49500.00),
+                new Employee(2L,"dipika@gmail.com", 55500.00),
+                new Employee(3L, "Dipshika", "Dipshika@yahoo.com", 125000.00, "8880129176" ));
 
+        lst.stream().filter(n -> n.getSalary()>50000).forEach(System.out::println);
     }
 }
